@@ -12,6 +12,15 @@
 
   <br /><br />
   ![image of application](./utils/image/mainScreenshot.gif)
+
+  <hr />
+  <br />
+
+  ### Html output
+  <br />
+
+  ![image of application](./utils/image/htmlOutput.png)
+
   <br /><br />
   ## [Description](#description)
 
