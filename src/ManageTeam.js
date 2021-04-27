@@ -28,7 +28,6 @@ class ManageTeam {
                     employeeData.interns.push(new Intern(intern.internName, intern.internEmail, intern.internID, intern.internSchool));
                     continuePrompt = intern.addIntern;
                 }
-                console.log(employeeData);
             }
         } catch (error) {
             console.log(error);
