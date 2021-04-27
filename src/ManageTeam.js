@@ -1,4 +1,6 @@
 const inquirer = require('inquirer');
+const fs = require('fs');
+const home = require('../dist/home')
 
 const Manager = require('../lib/Manager');
 const Engineer = require('../lib/Engineer');
@@ -26,10 +28,12 @@ class ManageTeam {
                     employeeData.interns.push(new Intern(intern.internName, intern.internEmail, intern.internID, intern.internSchool));
                     continuePrompt = intern.addIntern;
                 }
+                console.log(employeeData);
             }
         } catch (error) {
             console.log(error);
         }
+        fs.writeFile('./dist/home.html', home.getHtmlOutput(), (error) => error ? console.log(error) : console.log('Successfully written to file'));
         console.log("Successfully added all entries...");
     }
 
