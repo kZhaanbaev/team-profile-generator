@@ -1,0 +1,13 @@
+section {
+    background-color: rgb(204, 65, 65);
+    color: white;
+}
+
+h5 {
+    display: inline;
+}
+
+.custom-card{
+    width: 20rem;
+    margin: auto;
+}
